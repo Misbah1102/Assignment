@@ -1,0 +1,23 @@
+
+//chp5q4
+
+class testError{
+    meth(num ){
+        if(num==0){
+            throw new CustomException("zero is not accepted")
+        }
+        
+    }
+    meth2(){
+        meth(0);
+    }
+
+    meth3(){
+        try{
+            meth2();
+        }
+        catch(CustomException){
+           console.error(CustomException)
+        }
+    }
+}
